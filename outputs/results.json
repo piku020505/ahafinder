@@ -1,0 +1,325 @@
+{
+  "funnel": [
+    {
+      "step": "app_install",
+      "users": 100000,
+      "step_conv": NaN,
+      "overall_conv": 1.0,
+      "lost": 0
+    },
+    {
+      "step": "signup_completed",
+      "users": 75653,
+      "step_conv": 0.7565,
+      "overall_conv": 0.7565,
+      "lost": 24347
+    },
+    {
+      "step": "kyc_started",
+      "users": 54313,
+      "step_conv": 0.7179,
+      "overall_conv": 0.5431,
+      "lost": 21340
+    },
+    {
+      "step": "kyc_completed",
+      "users": 48593,
+      "step_conv": 0.8947,
+      "overall_conv": 0.4859,
+      "lost": 5720
+    },
+    {
+      "step": "upi_linked",
+      "users": 41036,
+      "step_conv": 0.8445,
+      "overall_conv": 0.4104,
+      "lost": 7557
+    },
+    {
+      "step": "first_purchase",
+      "users": 31148,
+      "step_conv": 0.759,
+      "overall_conv": 0.3115,
+      "lost": 9888
+    }
+  ],
+  "install_to_first_buy_pct": 31.1,
+  "kyc_completion_by_segment": {
+    "1": {
+      "android_low_end": 0.7521,
+      "android_mid_high": 0.941,
+      "ios": 0.9549
+    },
+    "2": {
+      "android_low_end": 0.7764,
+      "android_mid_high": 0.9431,
+      "ios": 0.9464
+    },
+    "3": {
+      "android_low_end": 0.7075,
+      "android_mid_high": 0.9207,
+      "ios": 0.9422
+    }
+  },
+  "kyc_fail_reason_share": {
+    "android_low_end": {
+      "selfie_liveness_fail": 0.7217,
+      "pan_name_mismatch": 0.1392,
+      "aadhaar_otp_timeout": 0.1392
+    },
+    "android_mid_high": {
+      "pan_name_mismatch": 0.3957,
+      "selfie_liveness_fail": 0.304,
+      "aadhaar_otp_timeout": 0.3004
+    },
+    "ios": {
+      "pan_name_mismatch": 0.4316,
+      "selfie_liveness_fail": 0.2847,
+      "aadhaar_otp_timeout": 0.2837
+    }
+  },
+  "opportunity_close_half_gap": {
+    "extra_kyc_completions": 1228,
+    "extra_first_buyers": 787,
+    "extra_d30_retained": 373,
+    "lift_in_first_buyers_pct": 2.5
+  },
+  "opportunity_close_full_gap": {
+    "extra_kyc_completions": 2457,
+    "extra_first_buyers": 1575,
+    "extra_d30_retained": 745,
+    "lift_in_first_buyers_pct": 5.1
+  },
+  "kyc_low_end_rate": 73.5,
+  "kyc_rest_rate": 94.0,
+  "low_end_share_of_kyc_starters": 22.1,
+  "low_end_share_of_kyc_failures": 50.1,
+  "low_end_selfie_share_of_fails": 72.2,
+  "n_first_buyers": 31148,
+  "d30_retention_buyers_pct": 47.3,
+  "aha_candidates": [
+    {
+      "action": "Enabled AutoSave",
+      "adoption": 0.38,
+      "ret_if_did": 0.7158,
+      "ret_if_not": 0.3248,
+      "naive_lift_pp": 39.101,
+      "precision": 0.7158,
+      "recall": 0.5746,
+      "adjusted_lift_pp": 22.128,
+      "adj_ci_low": 21.2429,
+      "adj_ci_high": 23.0132,
+      "odds_ratio": 3.5703
+    },
+    {
+      "action": "Created a savings goal",
+      "adoption": 0.4257,
+      "ret_if_did": 0.5676,
+      "ret_if_not": 0.4035,
+      "naive_lift_pp": 16.4061,
+      "precision": 0.5676,
+      "recall": 0.5104,
+      "adjusted_lift_pp": 8.6496,
+      "adj_ci_low": 7.7276,
+      "adj_ci_high": 9.5715,
+      "odds_ratio": 1.6445
+    },
+    {
+      "action": "Set a gold price alert",
+      "adoption": 0.4761,
+      "ret_if_did": 0.5267,
+      "ret_if_not": 0.4248,
+      "naive_lift_pp": 10.1896,
+      "precision": 0.5267,
+      "recall": 0.5298,
+      "adjusted_lift_pp": 3.0484,
+      "adj_ci_low": 2.12,
+      "adj_ci_high": 3.9767,
+      "odds_ratio": 1.1916
+    },
+    {
+      "action": "Sent a referral",
+      "adoption": 0.1609,
+      "ret_if_did": 0.5654,
+      "ret_if_not": 0.4557,
+      "naive_lift_pp": 10.975,
+      "precision": 0.5654,
+      "recall": 0.1922,
+      "adjusted_lift_pp": 5.077,
+      "adj_ci_low": 3.8133,
+      "adj_ci_high": 6.3407,
+      "odds_ratio": 1.3391
+    },
+    {
+      "action": "3+ manual buys",
+      "adoption": 0.4493,
+      "ret_if_did": 0.6537,
+      "ret_if_not": 0.3262,
+      "naive_lift_pp": 32.7487,
+      "precision": 0.6537,
+      "recall": 0.6205,
+      "adjusted_lift_pp": 20.9488,
+      "adj_ci_low": 20.11,
+      "adj_ci_high": 21.7876,
+      "odds_ratio": 3.3362
+    },
+    {
+      "action": "Opened app on 3+ days",
+      "adoption": 0.4423,
+      "ret_if_did": 0.7098,
+      "ret_if_not": 0.2859,
+      "naive_lift_pp": 42.3923,
+      "precision": 0.7098,
+      "recall": 0.6632,
+      "adjusted_lift_pp": 22.2189,
+      "adj_ci_low": 21.3806,
+      "adj_ci_high": 23.0572,
+      "odds_ratio": 3.589
+    }
+  ],
+  "buy_threshold_sweep": [
+    {
+      "k": 1,
+      "coverage": 1.0,
+      "ret_if_did": 0.4734,
+      "ret_if_not": NaN,
+      "recall": 1.0,
+      "precision": 0.4734,
+      "f1": 0.6426,
+      "marginal_gain_pp": NaN
+    },
+    {
+      "k": 2,
+      "coverage": 0.7582,
+      "ret_if_did": 0.5326,
+      "ret_if_not": 0.2876,
+      "recall": 0.8531,
+      "precision": 0.5326,
+      "f1": 0.6558,
+      "marginal_gain_pp": 5.9229
+    },
+    {
+      "k": 3,
+      "coverage": 0.4493,
+      "ret_if_did": 0.6537,
+      "ret_if_not": 0.3262,
+      "recall": 0.6205,
+      "precision": 0.6537,
+      "f1": 0.6366,
+      "marginal_gain_pp": 12.1126
+    },
+    {
+      "k": 4,
+      "coverage": 0.2285,
+      "ret_if_did": 0.7057,
+      "ret_if_not": 0.4045,
+      "recall": 0.3406,
+      "precision": 0.7057,
+      "f1": 0.4595,
+      "marginal_gain_pp": 5.2025
+    },
+    {
+      "k": 5,
+      "coverage": 0.1035,
+      "ret_if_did": 0.7596,
+      "ret_if_not": 0.4403,
+      "recall": 0.1661,
+      "precision": 0.7596,
+      "f1": 0.2726,
+      "marginal_gain_pp": 5.3882
+    },
+    {
+      "k": 6,
+      "coverage": 0.045,
+      "ret_if_did": 0.8108,
+      "ret_if_not": 0.4575,
+      "recall": 0.077,
+      "precision": 0.8108,
+      "f1": 0.1407,
+      "marginal_gain_pp": 5.1234
+    },
+    {
+      "k": 7,
+      "coverage": 0.0183,
+      "ret_if_did": 0.8699,
+      "ret_if_not": 0.466,
+      "recall": 0.0336,
+      "precision": 0.8699,
+      "f1": 0.0647,
+      "marginal_gain_pp": 5.9098
+    },
+    {
+      "k": 8,
+      "coverage": 0.0069,
+      "ret_if_did": 0.9074,
+      "ret_if_not": 0.4703,
+      "recall": 0.0133,
+      "precision": 0.9074,
+      "f1": 0.0262,
+      "marginal_gain_pp": 3.746
+    }
+  ],
+  "aha_definition": "AutoSave enabled OR 3+ manual buys within 7 days of install",
+  "aha_reached_pct": 63.0,
+  "aha_ret_pct": 63.3,
+  "non_aha_ret_pct": 20.1,
+  "aha_ret_multiple": 3.14,
+  "aha_recall_pct": 84.3,
+  "oot_validation": {
+    "train": "Jul-Aug cohorts",
+    "test": "Sep cohort",
+    "n_test": 10105,
+    "auc": 0.818,
+    "aha_ret_pct_test": 63.2,
+    "non_aha_ret_pct_test": 19.7
+  },
+  "by_channel": [
+    {
+      "channel": "referral",
+      "installs": 15107,
+      "install_to_first_buy": 0.3843,
+      "d30_retention_of_buyers": 0.5575
+    },
+    {
+      "channel": "organic",
+      "installs": 34857,
+      "install_to_first_buy": 0.3345,
+      "d30_retention_of_buyers": 0.496
+    },
+    {
+      "channel": "influencer",
+      "installs": 19919,
+      "install_to_first_buy": 0.2956,
+      "d30_retention_of_buyers": 0.4334
+    },
+    {
+      "channel": "paid_social",
+      "installs": 30117,
+      "install_to_first_buy": 0.2589,
+      "d30_retention_of_buyers": 0.407
+    }
+  ],
+  "time_to_convert": {
+    "median_mins_install_to_signup": 4.2,
+    "median_mins_kyc": 3.2,
+    "median_hrs_to_first_buy": 7.1,
+    "p90_hrs_to_first_buy": 21.9
+  },
+  "n_events": 1071447,
+  "n_users": 100000,
+  "metric_tree": {
+    "north_star": "Weekly Active Savers (>=1 successful manual buy or AutoSave debit in the week)",
+    "install_to_first_buy_pct": 31.1,
+    "aha_reached_pct_of_buyers": 63.0,
+    "d30_retention_buyers_pct": 47.3,
+    "autosave_adoption_pct_of_buyers": 38.0,
+    "autosave_debit_failure_rate_pct": 7.0
+  },
+  "experiment_sizing": {
+    "hypothesis": "Prompting AutoSave set-up right after the first purchase raises D30 retention",
+    "baseline_d30_pct": 47.3,
+    "mde_pp": 2.0,
+    "n_per_arm": 9800,
+    "weeks_needed_at_current_volume": 8.2
+  }
+}
